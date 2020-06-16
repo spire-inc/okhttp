@@ -44,7 +44,7 @@ class ConnectionPool internal constructor(
       timeUnit = timeUnit
   ))
 
-  constructor() : this(5, 5, TimeUnit.MINUTES)
+  constructor() : this(10, 10, TimeUnit.MINUTES)
 
   /** Returns the number of idle connections in the pool. */
   fun idleConnectionCount(): Int = delegate.idleConnectionCount()
